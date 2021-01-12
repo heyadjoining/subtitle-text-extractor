@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Extract Raw Text from Subtitle File</title>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div>
+            Select your subtitle file:
+        </div>
+        <input type="file" id="srt-upload"/>
+
+        <div style="margin-top: 10px;">
+            Result:
+        </div>
+
+        <div style="display: flex; flex-direction: column">
+        <textarea
+            id="result-div"
+            style="width: 800px; height: 500px; border-style: double; overflow-y: scroll"
+        >
+        </textarea>
+
+        <button id="copy-to-clipboard" style="margin-top: 10px; width: 170px">
+            Copy Text to Clipboard
+        </button>
+        </div>
+    </body>
+    <footer style="margin-top: 10px">
+        Supported filetypes: .sub, .srt, .sbv, .vtt, .ssa, .ass, .smi
+    </footer>
+</html>
