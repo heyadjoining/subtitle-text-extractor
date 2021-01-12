@@ -1,4 +1,5 @@
 const subsrt = require('subsrt');
+const css = require('./style.css');
 
 async function handleUpload(event) {
     const files = event.target.files;
