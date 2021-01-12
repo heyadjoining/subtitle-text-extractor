@@ -1,0 +1,12 @@
+.container{
+    padding: 2rem 0;
+}
+
+textarea{
+    width: 100%; 
+    height: 500px; 
+    border-style: double; 
+    overflow-y: scroll;
+    resize: none;
+    margin-bottom: 0;
+}

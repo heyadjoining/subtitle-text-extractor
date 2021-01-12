@@ -4,30 +4,39 @@
         <meta charset="utf-8" />
         <title>Extract Raw Text from Subtitle File</title>
         <script src="main.js"></script>
+        <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-2.21.0.min.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div>
-            Select your subtitle file:
-        </div>
-        <input type="file" id="srt-upload"/>
+        <div class="col-12 u-align-text--center">
+            <div class="row">
+                <h2>
+                    Extract Text from Subtitle File
+                </h2>
+                <div>
+                    Select your subtitle file:
+                </div>
+                <input class="u-align-text--center" type="file" id="srt-upload"/>
+            </div>
 
-        <div style="margin-top: 10px;">
-            Result:
-        </div>
+            <div class="row u-align--center">
+                <div>
+                    Result:
+                </div>
+                <textarea
+                    id="result-div"
+                >
+                </textarea>
 
-        <div style="display: flex; flex-direction: column">
-            <textarea
-                id="result-div"
-                style="width: 800px; height: 500px; border-style: double; overflow-y: scroll"
-            >
-            </textarea>
-
-            <button id="copy-to-clipboard" style="margin-top: 10px; width: 170px">
-                Copy Text to Clipboard
-            </button>
+                <button id="copy-to-clipboard" class="p-button--positive has-icon">
+                    <i class="p-icon--copy is-light"></i>
+                    <span>Copy Text to Clipboard</span>
+                </button>
+            </div>
+            <footer style="margin-top: 10px">
+                Supported filetypes: .sub, .srt, .sbv, .vtt, .ssa, .ass, .smi
+            </footer>
         </div>
     </body>
-    <footer style="margin-top: 10px">
-        Supported filetypes: .sub, .srt, .sbv, .vtt, .ssa, .ass, .smi
-    </footer>
+    
 </html>
